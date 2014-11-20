@@ -1,0 +1,11 @@
+<h1>
+  Spaces
+  <span class="badge">TODO: Add Space Count</span>
+</h1>
+
+<dl>
+  {{#each space in model}}
+  <dt>{{#link-to 'space' space}}{{space.name}}{{/link-to}}</dt>
+  <dd>TODO: truncate this ... {{space.description}}</dd>
+  {{/each}}
+</dl>
