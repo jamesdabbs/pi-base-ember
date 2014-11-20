@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import PagedRoute from './paged-route';
 
-export default Ember.Route.extend({
-  model: function() {
-    return this.store.find('property');
+export default PagedRoute.extend({
+  model: function(params) {
+    return this.findPaged('property', params);
   }
 });

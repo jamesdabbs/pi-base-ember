@@ -1,11 +1,13 @@
 <h1>
   Properties
-  <span class="badge">TODO: Add Property Count</span>
+  <span class="badge">{{model.meta.total}}</span>
 </h1>
 
+{{page-numbers content=content}}
+
 <dl>
-  {{#each property in model}}
-    <dt>{{#link-to 'property' property}}{{property.name}}{{/link-to}}</dt>
-    <dd>{{preview-description property.description}}</dd>
+  {{#each this}}
+    <dt>{{#link-to 'property' this}}{{name}}{{/link-to}}</dt>
+    <dd>{{preview-description description}}</dd>
   {{/each}}
 </dl>

@@ -1,11 +1,13 @@
 <h1>
   Spaces
-  <span class="badge">TODO: Add Space Count</span>
+  <span class="badge">{{model.meta.total}}</span>
 </h1>
 
+{{page-numbers content=content}}
+
 <dl>
-  {{#each space in model}}
-  <dt>{{#link-to 'space' space}}{{space.name}}{{/link-to}}</dt>
-  <dd>{{preview-description space.description}}</dd>
+  {{#each this}}
+    <dt>{{#link-to 'space' this}}{{name}}{{/link-to}}</dt>
+    <dd>{{preview-description description}}</dd>
   {{/each}}
 </dl>
