@@ -8,6 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('spaces');
   this.resource('space', { path: '/spaces/:space_id' });
+
+  this.resource('properties');
+  this.resource('property', { path: '/property/:property_id' });
 });
 
 export default Router;
