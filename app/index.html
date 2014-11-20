@@ -15,6 +15,18 @@
   <body>
     {{content-for 'body'}}
 
+    <!-- TODO: vendorize these? -->
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        }
+      });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+
     <script src="assets/vendor.js"></script>
     <script src="assets/pi-base.js"></script>
   </body>

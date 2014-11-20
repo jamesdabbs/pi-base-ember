@@ -6,6 +6,6 @@
 <dl>
   {{#each space in model}}
   <dt>{{#link-to 'space' space}}{{space.name}}{{/link-to}}</dt>
-  <dd>TODO: truncate this ... {{space.description}}</dd>
+  <dd>{{preview-description space.description}}</dd>
   {{/each}}
 </dl>

@@ -11,6 +11,7 @@ Router.map(function() {
 
   this.resource('properties');
   this.resource('property', { path: '/property/:property_id' });
+  this.route('search');
 });
 
 export default Router;
