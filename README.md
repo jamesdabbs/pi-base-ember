@@ -1,8 +1,6 @@
 # Pi-base
 
-This README outlines the details of collaborating on this Ember application.
-
-A short introduction of this app could easily go here.
+This is a provisional attempt at splitting Pi-Base into an API / client architecture, and writing the frontend in Ember. It is by no means complete, but does illustrate some Ember basics and the direction the site is likely to head if I can secure some sustained collaborators. For now, development will continue on the main integrated Yesod site.
 
 ## Prerequisites
 
